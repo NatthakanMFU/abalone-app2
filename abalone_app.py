@@ -69,6 +69,7 @@ st.subheader('Pre-Processed Input:')
 st.write(X_new)
 
 import pickle
+from sklearn.preprocessing import MinMaxScaler
 # -- Reads the saved normalization model
 load_nor = pickle.load(open('normalization.pkl', 'rb'))
 
